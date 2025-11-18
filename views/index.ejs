@@ -9,11 +9,10 @@
   <!--  loop through the messages array and for each one, display the user, 
     text and the date the message was added. -->
   <% messages.forEach((message) => { %>
-    <ul>
       <h2>User: <%= message.user %> </h2>
       <p>Message: <%= message.text %> </p>
       <p>Added: <%= message.added %> </p>
-    </ul>
   <% }); %>
+  <button><a href="/new">New</a></button>
 </body>
 </html>
