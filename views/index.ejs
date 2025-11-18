@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> <%= title %> </title>
+</head>
+<body>
+  <!--  loop through the messages array and for each one, display the user, 
+    text and the date the message was added. -->
+  <% messages.forEach((message) => { %>
+    <ul>
+      <h2>User: <%= message.user %> </h2>
+      <p>Message: <%= message.text %> </p>
+      <p>Added: <%= message.added %> </p>
+    </ul>
+  <% }); %>
+</body>
+</html>
