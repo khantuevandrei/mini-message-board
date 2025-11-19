@@ -1,7 +1,7 @@
 const db = require("../db/queries");
 
 async function messagesListGet(req, res) {
-  const messages = await db.getAllUsernames();
+  const messages = await db.getAllMessages();
 
   res.render("index", {
     title: "Mini Messageboard",
